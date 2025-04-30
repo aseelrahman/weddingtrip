@@ -65,3 +65,5 @@ end
 gem "bootstrap", "~> 5.3"
 
 gem "font-awesome-sass", "~> 6.7"
+gem "dartsass-rails"
+

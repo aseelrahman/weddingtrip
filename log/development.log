@@ -94,3 +94,221 @@ Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.25
   
 ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
   
+Started GET "/" for 146.111.195.3 at 2025-04-29 20:35:01 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.3ms | GC: 5.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | GC: 23.4ms)
+Completed 200 OK in 194ms (Views: 84.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 40.6ms)
+
+
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 146.111.195.3 at 2025-04-29 20:35:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-71d83d29.css" for 146.111.195.3 at 2025-04-29 20:35:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 20:35:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-d56338b0.js" for 146.111.195.3 at 2025-04-29 20:35:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 146.111.195.3 at 2025-04-29 20:35:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-1262d735.js" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site-cecedd9c.css" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/1920/1080" for 146.111.195.3 at 2025-04-29 20:35:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/1920/1080"):
+  
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 20:35:22 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 20:35:22 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:07:24 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 17.6ms | GC: 7.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 183.9ms | GC: 19.2ms)
+Completed 200 OK in 524ms (Views: 203.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 60.1ms)
+
+
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:07:25 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:07:25 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:07:25 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/api/placeholder/1920/1080" for 146.111.195.3 at 2025-04-29 21:07:25 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/1920/1080"):
+  
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:11:43 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 81.0ms | GC: 3.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 94.2ms | GC: 4.6ms)
+Completed 200 OK in 167ms (Views: 95.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 11.5ms)
+
+
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/img_bg_03-ea6d8a20.JPG" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_01-8d74b535.JPG" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_02-a7fcaa0d.JPG" for 146.111.195.3 at 2025-04-29 21:11:44 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:12:48 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 65.2ms | GC: 3.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | GC: 3.4ms)
+Completed 200 OK in 105ms (Views: 72.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.5ms)
+
+
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:12:48 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:12:48 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:12:48 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_04-29a804f1.JPG" for 146.111.195.3 at 2025-04-29 21:12:48 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_05-ca78e4bf.jpg" for 146.111.195.3 at 2025-04-29 21:12:49 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:15:26 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 131.2ms | GC: 6.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 145.4ms | GC: 14.7ms)
+Completed 200 OK in 192ms (Views: 146.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.8ms)
+
+
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:15:26 +0000
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:15:26 +0000
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:15:26 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/img_bg_05-8d74b535.JPG" for 146.111.195.3 at 2025-04-29 21:15:27 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_04-a7fcaa0d.JPG" for 146.111.195.3 at 2025-04-29 21:15:27 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_02-29a804f1.JPG" for 146.111.195.3 at 2025-04-29 21:15:27 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/img_bg_01-ca78e4bf.jpg" for 146.111.195.3 at 2025-04-29 21:15:27 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:16:58 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 12.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:16:59 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:16:59 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:16:59 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:16:59 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:18:02 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | GC: 0.0ms)
+Completed 200 OK in 44ms (Views: 9.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:18:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:18:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:18:03 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 146.111.195.3 at 2025-04-29 21:18:29 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 11.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:18:29 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:18:29 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 146.111.195.3 at 2025-04-29 21:18:29 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/bootstrap" for 146.111.195.3 at 2025-04-29 21:18:53 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site" for 146.111.195.3 at 2025-04-29 21:18:53 +0000
+Cannot render console from 146.111.195.3! Allowed networks: 127.0.0.0/127.255.255.255, ::1
