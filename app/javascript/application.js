@@ -5,5 +5,5 @@ import "controllers"
 // Import Bootstrap JS
 import "bootstrap"
 
-// Import our custom JS
+// Import custom JS
 import "./wedding_site"

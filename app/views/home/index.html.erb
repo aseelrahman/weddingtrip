@@ -1,561 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Trip | Wedding Photography & Videography</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #212121;
-            background-color: #ffffff;
-        }
-        
-        /* Hero Slider Section */
-        .hero-slider {
-            position: relative;
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        .slide {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        
-        .slide.active {
-            opacity: 1;
-        }
-        
-        /* Overlay */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        /* Hero Content */
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 10;
-            width: 90%;
-            max-width: 800px;
-        }
-        
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            color: #ffffff;
-        }
-        
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-            color: #ffffff;
-        }
-        
-        /* Custom Navbar */
-        .navbar {
-            padding: 1rem 2rem;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        
-        .navbar.scrolled {
-            background-color: #000000;
-            padding: 0.5rem 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: #f5f405 !important; /* Bright yellow */
-        }
-        
-        .nav-link {
-            color: white !important;
-            margin: 0 10px;
-            position: relative;
-            font-weight: 500;
-        }
-        
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: #f5f405; /* Bright yellow */
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover:after {
-            width: 100%;
-        }
-        
-        /* CTA Buttons */
-        .btn-cta {
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-weight: 600;
-            margin: 0 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary-custom {
-            background-color: #f5f405; /* Bright yellow */
-            border-color: #f5f405;
-            color: #000000; /* Black text for contrast */
-        }
-        
-        .btn-primary-custom:hover {
-            background-color: #e2e105; /* Slightly darker yellow */
-            border-color: #e2e105;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        .btn-outline-light {
-            border-width: 2px;
-            color: #ffffff;
-            border-color: #f5f405; /* Bright yellow border */
-        }
-        
-        .btn-outline-light:hover {
-            background-color: #f5f405;
-            color: #000000;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Packages Section */
-        .packages {
-            padding: 5rem 0;
-            background-color: #ffffff;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: #000000;
-            position: relative;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            width: 50%;
-            height: 3px;
-            background-color: #f5f405; /* Bright yellow */
-            bottom: -10px;
-            left: 25%;
-        }
-        
-        .card {
-            border: 1px solid #e0e0e0;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
-            height: 100%;
-            background-color: #ffffff;
-        }
-        
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            border-color: #f5f405; /* Bright yellow */
-        }
-        
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .card-body {
-            padding: 2rem;
-        }
-        
-        .card-title {
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #000000;
-        }
-        
-        .price {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #f5f405; /* Bright yellow */
-            margin-bottom: 1rem;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 5rem 0 2rem;
-        }
-        
-        .footer-heading {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: #f5f405; /* Bright yellow */
-        }
-        
-        .footer-link {
-            color: rgba(255, 255, 255, 0.7);
-            transition: all 0.3s ease;
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-        }
-        
-        .footer-link:hover {
-            color: #f5f405; /* Bright yellow */
-            transform: translateX(5px);
-        }
-        
-        .social-icons a {
-            color: #ffffff;
-            font-size: 1.5rem;
-            margin-right: 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            color: #f5f405; /* Bright yellow */
-            transform: translateY(-5px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 2rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 991px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-content p {
-                font-size: 1rem;
-            }
-            
-            .btn-cta {
-                padding: 10px 20px;
-                margin: 5px;
-            }
-        }
-        
-        @media (max-width: 767px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-            
-            .navbar-collapse {
-                background-color: rgba(0, 0, 0, 0.9);
-                padding: 1rem;
-                border-radius: 5px;
-            }
-            
-            .packages {
-                padding: 3rem 0;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 575px) {
-            .hero-content h1 {
-                font-size: 1.8rem;
-            }
-            
-            .btn-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn-cta {
-                width: 80%;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Wedding Trip</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#packages">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#account">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- Hero Section with Slider -->
+<section id="home" class="hero-slider">
+    <!-- Slides -->
+    <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+        <div class="overlay"></div>
+    </div>
+    <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+        <div class="overlay"></div>
+    </div>
+    <div class="slide" style="background-image: url('<%= asset_path('img_bg_03.JPG') %>');">
+        <div class="overlay"></div>
+    </div>
+    <div class="slide" style="background-image: url('<%= asset_path('img_bg_04.JPG') %>');">
+        <div class="overlay"></div>
+    </div>
+    <div class="slide" style="background-image: url('<%= asset_path('img_bg_05.JPG') %>');">
+        <div class="overlay"></div>
+    </div>
 
-    <!-- Hero Section with Slider -->
-    <section id="home" class="hero-slider">
-        <!-- Slides -->
-        <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
-  <div class="overlay"></div>
-</div>
-<div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
-  <div class="overlay"></div>
-</div>
-<div class="slide" style="background-image: url('<%= asset_path('img_bg_03.JPG') %>');">
-  <div class="overlay"></div>
-</div>
-<div class="slide" style="background-image: url('<%= asset_path('img_bg_04.JPG') %>');">
-  <div class="overlay"></div>
-</div>
-<div class="slide" style="background-image: url('<%= asset_path('img_bg_05.JPG') %>');">
-  <div class="overlay"></div>
-</div>
-        
-        <!-- Hero Content -->
-        <div class="hero-content">
-            <h1>Capturing Your Perfect Day</h1>
-            <p>Professional wedding photography and videography to preserve your precious moments forever</p>
-            <div class="btn-container">
-                <a href="#" class="btn btn-primary-custom btn-cta">Book an Event</a>
-                <a href="#packages" class="btn btn-outline-light btn-cta">View Packages</a>
-            </div>
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <h1>Capturing Your Perfect Day</h1>
+        <p>Professional wedding photography and videography to preserve your precious moments forever</p>
+        <div class="btn-container">
+            <a href="#" class="btn btn-primary-custom btn-cta">Book an Event</a>
+            <a href="#packages" class="btn btn-outline-light btn-cta">View Packages</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Packages Section -->
-    <section id="packages" class="packages">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Packages</h2>
-                <p>Tailored to capture every moment of your special day</p>
+<!-- Packages Section -->
+<section id="packages" class="packages">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Packages</h2>
+            <p>Tailored to capture every moment of your special day</p>
+        </div>
+
+        <div class="row">
+            <!-- Package 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Essential Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Essential Package</h5>
+                        <p class="price">$1,499</p>
+                        <p class="card-text">Perfect for intimate weddings with 6 hours of coverage, 300+ edited photos, and online gallery.</p>
+                        <a href="#" class="btn btn-primary-custom w-100">View Details</a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="row">
-                <!-- Package 1 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Essential Package">
-                        <div class="card-body">
-                            <h5 class="card-title">Essential Package</h5>
-                            <p class="price">$1,499</p>
-                            <p class="card-text">Perfect for intimate weddings with 6 hours of coverage, 300+ edited photos, and online gallery.</p>
-                            <a href="#" class="btn btn-primary-custom w-100">View Details</a>
-                        </div>
+
+            <!-- Package 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Classic Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Package</h5>
+                        <p class="price">$2,499</p>
+                        <p class="card-text">8 hours of coverage, 500+ edited photos, engagement session, and premium album.</p>
+                        <a href="#" class="btn btn-primary-custom w-100">View Details</a>
                     </div>
                 </div>
-                
-                <!-- Package 2 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Classic Package">
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Package</h5>
-                            <p class="price">$2,499</p>
-                            <p class="card-text">8 hours of coverage, 500+ edited photos, engagement session, and premium album.</p>
-                            <a href="#" class="btn btn-primary-custom w-100">View Details</a>
-                        </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Premium Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Package</h5>
+                        <p class="price">$3,499</p>
+                        <p class="card-text">Full day coverage, 700+ photos, highlight video, second photographer, and engagement session.</p>
+                        <a href="#" class="btn btn-primary-custom w-100">View Details</a>
                     </div>
                 </div>
-                
-                <!-- Package 3 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Premium Package">
-                        <div class="card-body">
-                            <h5 class="card-title">Premium Package</h5>
-                            <p class="price">$3,499</p>
-                            <p class="card-text">Full day coverage, 700+ photos, highlight video, second photographer, and engagement session.</p>
-                            <a href="#" class="btn btn-primary-custom w-100">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Package 4 -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Luxury Package">
-                        <div class="card-body">
-                            <h5 class="card-title">Luxury Package</h5>
-                            <p class="price">$4,999</p>
-                            <p class="card-text">Complete 2-day coverage, 1000+ photos, cinematic film, drone shots, and luxury album.</p>
-                            <a href="#" class="btn btn-primary-custom w-100">View Details</a>
-                        </div>
+            </div>
+
+            <!-- Package 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Luxury Package">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Package</h5>
+                        <p class="price">$4,999</p>
+                        <p class="card-text">Complete 2-day coverage, 1000+ photos, cinematic film, drone shots, and luxury album.</p>
+                        <a href="#" class="btn btn-primary-custom w-100">View Details</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <!-- About -->
-                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <h3 class="footer-heading">Wedding Trip</h3>
-                    <p>We specialize in capturing the emotion, beauty and joy of your wedding day with a creative and authentic approach.</p>
-                    <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#packages" class="footer-link">Packages</a></li>
-                        <li><a href="#" class="footer-link">Portfolio</a></li>
-                        <li><a href="#" class="footer-link">About Us</a></li>
-                        <li><a href="#" class="footer-link">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <h3 class="footer-heading">Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Wedding Street, Suite 100<br>Photography City, PC 12345</p>
-                    <p><i class="fas fa-phone-alt me-2"></i> (123) 456-7890</p>
-                    <p><i class="fas fa-envelope me-2"></i> info@weddingtrip.com</p>
-                </div>
-                
-                <!-- Newsletter -->
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="footer-heading">Newsletter</h3>
-                    <p>Subscribe to get special offers and wedding tips.</p>
-                    <form>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
-                            <button class="btn btn-primary-custom" type="button" id="button-addon2">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-            <!-- Copyright -->
-            <div class="copyright">
-                <p>© 2025 Wedding Trip. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.querySelector('.navbar').classList.add('scrolled');
-            } else {
-                document.querySelector('.navbar').classList.remove('scrolled');
-            }
-        });
-        
-        // Hero slider functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const slideCount = slides.length;
-        
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[index].classList.add('active');
-        }
-        
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slideCount;
-            showSlide(currentSlide);
-        }
-        
-        // Auto-advance slides every 5 seconds
-        setInterval(nextSlide, 5000);
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return; // Skip links with just "#"
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    
-                    // Close mobile menu if open
-                    const navbarToggler = document.querySelector('.navbar-toggler');
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        navbarToggler.click();
-                    }
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    </div>
+</section>
