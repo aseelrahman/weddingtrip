@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Splash screen animation
+    const splashScreen = document.getElementById('splash-screen');
+  const logo = document.querySelector('.logo');
+  
+  // After 2 seconds, scale down the logo and fade out the splash screen
+  setTimeout(function() {
+    // Logo will begin its scale down animation (from the CSS keyframes)
+    
+    // After animation completes, fade out the splash screen
+    setTimeout(function() {
+      splashScreen.classList.add('fade-out');
+      
+      // After the fade animation is complete, hide the splash screen completely
+      setTimeout(function() {
+        splashScreen.classList.add('hidden');
+        document.body.classList.add('loaded');
+      }, 1000); // This matches the transition duration in CSS
+    }, 500); // Time for logo to shrink
+  }, 2000); // Show logo for 2 seconds before starting final transition
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
