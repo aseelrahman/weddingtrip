@@ -3,11 +3,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #212121;
     background-color: #ffffff;
-    overflow: hidden; /* Added for splash screen */
+    overflow-x: hidden; /* Changed from just "overflow: hidden" */
+    width: 100%;
 }
 
 body.loaded {
-    overflow: auto; /* Allow scrolling after splash screen */
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 /* Splash Screen Styles */
@@ -23,6 +25,10 @@ body.loaded {
     justify-content: center;
     align-items: center;
     transition: opacity 1s ease-in-out;
+    -webkit-transform: translate3d(0,0,0); /* Force hardware acceleration */
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden; /* Prevent flickering */
+    backface-visibility: hidden;
 }
 
 .logo-container {
@@ -32,39 +38,77 @@ body.loaded {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .logo {
     max-width: 100%;
     max-height: 100%;
     animation: logoTwice 2.5s ease-in-out forwards;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 /* Logo appears twice animation */
 @keyframes logoTwice {
     0% {
         opacity: 0;
+        -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
     25% {
         opacity: 1;
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
     50% {
         opacity: 0.3;
+        -webkit-transform: scale(0.9);
         transform: scale(0.9);
     }
     75% {
         opacity: 1;
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
     90% {
         opacity: 1;
+        -webkit-transform: scale(1);
         transform: scale(1);
     }
     100% {
         opacity: 0;
+        -webkit-transform: scale(0.8);
         transform: scale(0.8);
+    }
+}
+
+/* Adding webkit version for Safari/iOS support */
+@-webkit-keyframes logoTwice {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+    }
+    25% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        -webkit-transform: scale(0.9);
+    }
+    75% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    90% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
     }
 }
 

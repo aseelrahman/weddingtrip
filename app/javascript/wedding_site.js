@@ -1,23 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Splash screen animation
+    // Splash screen animation - iOS compatible version
     const splashScreen = document.getElementById('splash-screen');
-  const logo = document.querySelector('.logo');
-  
-  // After 2 seconds, scale down the logo and fade out the splash screen
-  setTimeout(function() {
-    // Logo will begin its scale down animation (from the CSS keyframes)
     
-    // After animation completes, fade out the splash screen
-    setTimeout(function() {
-      splashScreen.classList.add('fade-out');
-      
-      // After the fade animation is complete, hide the splash screen completely
-      setTimeout(function() {
-        splashScreen.classList.add('hidden');
-        document.body.classList.add('loaded');
-      }, 1000); // This matches the transition duration in CSS
-    }, 500); // Time for logo to shrink
-  }, 2000); // Show logo for 2 seconds before starting final transition
+    // Safety check to prevent errors if the splash screen element isn't found
+    if (splashScreen) {
+        // Use requestAnimationFrame for smoother animation on iOS
+        requestAnimationFrame(function() {
+            // After 3 seconds (or your preferred timing), scale down the logo and fade out
+            setTimeout(function() {
+                // Logo will animate based on the CSS keyframes
+                
+                // After animation completes, fade out the splash screen
+                setTimeout(function() {
+                    // Use RAF again for the class change - helps with iOS rendering
+                    requestAnimationFrame(function() {
+                        splashScreen.classList.add('fade-out');
+                        
+                        // After the fade animation completes, hide the splash screen
+                        setTimeout(function() {
+                            splashScreen.classList.add('hidden');
+                            document.body.classList.add('loaded');
+                        }, 1000); // Matches the transition duration in CSS
+                    });
+                }, 2500); // Match this to your CSS animation duration
+            }, 500); // Small delay to ensure everything is loaded properly
+        });
+    }
 
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
