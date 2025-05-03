@@ -21,6 +21,35 @@ document.addEventListener("DOMContentLoaded", function() {
     // Reapply backgrounds when window is resized
     window.addEventListener('resize', setResponsiveBackgrounds);
     
+    // Right to left fade animation for changing words
+    function setupRightLeftFadeAnimation() {
+        const wordElement = document.querySelector('.changing-word');
+        if (!wordElement) return;
+        
+        const words = ['Perfect', 'Beautiful', 'Magical', 'Special', 'Dream'];
+        let currentWordIndex = 0;
+        
+        // Initial word
+        wordElement.textContent = words[currentWordIndex];
+        
+        // Change word every 3 seconds
+        setInterval(function() {
+            // Reset animation
+            wordElement.style.animation = 'none';
+            // Trigger browser reflow
+            void wordElement.offsetWidth;
+            // Restart animation
+            wordElement.style.animation = 'fadeRightLeft 3s ease-in-out';
+            
+            // Update to next word
+            currentWordIndex = (currentWordIndex + 1) % words.length;
+            wordElement.textContent = words[currentWordIndex];
+        }, 3000);
+    }
+    
+    // Initialize right-to-left fade animation
+    setupRightLeftFadeAnimation();
+    
     // Splash screen animation - iOS compatible version
     const splashScreen = document.getElementById('splash-screen');
     
@@ -100,5 +129,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    console.log("Wedding site JS loaded with responsive backgrounds"); // Updated debug message
+    console.log("Wedding site JS loaded with right-to-left fade animation"); // Updated debug message
 });
