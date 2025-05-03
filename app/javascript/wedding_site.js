@@ -1,4 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Set responsive backgrounds on load and resize
+    function setResponsiveBackgrounds() {
+        const slides = document.querySelectorAll('.slide');
+        const isMobile = window.innerWidth <= 767;
+        
+        slides.forEach(slide => {
+            const bgImage = isMobile ? 
+                slide.getAttribute('data-mobile-bg') : 
+                slide.getAttribute('data-desktop-bg');
+            
+            if (bgImage) {
+                slide.style.backgroundImage = `url('${bgImage}')`;
+            }
+        });
+    }
+    
+    // Apply responsive backgrounds
+    setResponsiveBackgrounds();
+    
+    // Reapply backgrounds when window is resized
+    window.addEventListener('resize', setResponsiveBackgrounds);
+    
     // Splash screen animation - iOS compatible version
     const splashScreen = document.getElementById('splash-screen');
     
@@ -78,5 +100,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    console.log("Wedding site JS loaded"); // Add this for debugging
+    console.log("Wedding site JS loaded with responsive backgrounds"); // Updated debug message
 });

@@ -5137,3 +5137,568 @@ Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.25
   
 ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
   
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:35:29 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.):
+    10: <!-- Hero Section with Slider -->
+    11: <section id="home" class="hero-slider">
+    12:     <!-- Slides -->
+    13:     <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+    14:         <div class="overlay"></div>
+    15:     </div>
+    16:     <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+  
+app/views/home/index.html.erb:13
+
+Information for cause: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.):
+  
+app/views/home/index.html.erb:13
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:37:14 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.9ms)
+
+
+  
+ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.):
+    10: <!-- Hero Section with Slider -->
+    11: <section id="home" class="hero-slider">
+    12:     <!-- Slides -->
+    13:     <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+    14:         <div class="overlay"></div>
+    15:     </div>
+    16:     <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+  
+app/views/home/index.html.erb:13
+
+Information for cause: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.):
+  
+app/views/home/index.html.erb:13
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:39:40 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 3.7ms)
+
+
+  
+ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.):
+    10: <!-- Hero Section with Slider -->
+    11: <section id="home" class="hero-slider">
+    12:     <!-- Slides -->
+    13:     <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+    14:         <div class="overlay"></div>
+    15:     </div>
+    16:     <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+  
+app/views/home/index.html.erb:13
+
+Information for cause: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.):
+  
+app/views/home/index.html.erb:13
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:39:43 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.):
+    10: <!-- Hero Section with Slider -->
+    11: <section id="home" class="hero-slider">
+    12:     <!-- Slides -->
+    13:     <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+    14:         <div class="overlay"></div>
+    15:     </div>
+    16:     <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+  
+app/views/home/index.html.erb:13
+
+Information for cause: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.):
+  
+app/views/home/index.html.erb:13
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:41:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.4ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.3ms)
+Completed 200 OK in 43ms (Views: 12.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/assets/wedding_site-1fc4faef.css" for 108.6.113.229 at 2025-05-03 06:41:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Unable to resolve '/app/assets/images/background_img/img_bg_01.jpg' for missing asset 'app/assets/images/background_img/img_bg_01.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_02.JPG' for missing asset 'app/assets/images/background_img/img_bg_02.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_03.JPG' for missing asset 'app/assets/images/background_img/img_bg_03.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_04.JPG' for missing asset 'app/assets/images/background_img/img_bg_04.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_05.JPG' for missing asset 'app/assets/images/background_img/img_bg_05.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_01m.jpg' for missing asset 'app/assets/images/background_img/img_bg_01m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_02m.JPEG' for missing asset 'app/assets/images/background_img/img_bg_02m.JPEG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_03m.jpg' for missing asset 'app/assets/images/background_img/img_bg_03m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_04m.jpg' for missing asset 'app/assets/images/background_img/img_bg_04m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_05m.jpg' for missing asset 'app/assets/images/background_img/img_bg_05m.jpg' in wedding_site.css
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:41:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/app/assets/images/background_img/img_bg_01.jpg" for 108.6.113.229 at 2025-05-03 06:41:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_01.jpg"):
+  
+Started GET "/app/assets/images/background_img/img_bg_05.JPG" for 108.6.113.229 at 2025-05-03 06:41:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_05.JPG"):
+  
+Started GET "/app/assets/images/background_img/img_bg_02.JPG" for 108.6.113.229 at 2025-05-03 06:41:23 +0000
+Started GET "/app/assets/images/background_img/img_bg_03.JPG" for 108.6.113.229 at 2025-05-03 06:41:23 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_02.JPG"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_03.JPG"):
+  
+Started GET "/app/assets/images/background_img/img_bg_04.JPG" for 108.6.113.229 at 2025-05-03 06:41:23 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_04.JPG"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:41:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:41:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:42:38 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | GC: 2.8ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | GC: 3.1ms)
+Completed 200 OK in 59ms (Views: 14.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/wedding_site-1fc4faef.css" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Unable to resolve '/app/assets/images/background_img/img_bg_01.jpg' for missing asset 'app/assets/images/background_img/img_bg_01.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_02.JPG' for missing asset 'app/assets/images/background_img/img_bg_02.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_03.JPG' for missing asset 'app/assets/images/background_img/img_bg_03.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_04.JPG' for missing asset 'app/assets/images/background_img/img_bg_04.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_05.JPG' for missing asset 'app/assets/images/background_img/img_bg_05.JPG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_01m.jpg' for missing asset 'app/assets/images/background_img/img_bg_01m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_02m.JPEG' for missing asset 'app/assets/images/background_img/img_bg_02m.JPEG' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_03m.jpg' for missing asset 'app/assets/images/background_img/img_bg_03m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_04m.jpg' for missing asset 'app/assets/images/background_img/img_bg_04m.jpg' in wedding_site.css
+Unable to resolve '/app/assets/images/background_img/img_bg_05m.jpg' for missing asset 'app/assets/images/background_img/img_bg_05m.jpg' in wedding_site.css
+Started GET "/app/assets/images/background_img/img_bg_05.JPG" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_05.JPG"):
+  
+Started GET "/app/assets/images/background_img/img_bg_04.JPG" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_04.JPG"):
+  
+Started GET "/app/assets/images/background_img/img_bg_02.JPG" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Started GET "/app/assets/images/background_img/img_bg_03.JPG" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_03.JPG"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_02.JPG"):
+  
+Started GET "/app/assets/images/background_img/img_bg_01.jpg" for 108.6.113.229 at 2025-05-03 06:42:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/background_img/img_bg_01.jpg"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:42:54 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 123ms (Views: 10.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:42:54 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:47:03 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.3ms)
+
+
+  
+ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'img_bg_01.jpg' was not found in the load path.):
+     8: <!-- Hero Section with Slider -->
+     9: <section id="home" class="hero-slider">
+    10:     <!-- Slides -->
+    11:     <div class="slide active" style="background-image: url('<%= asset_path('img_bg_01.jpg') %>');">
+    12:         <div class="overlay"></div>
+    13:     </div>
+    14:     <div class="slide" style="background-image: url('<%= asset_path('img_bg_02.JPG') %>');">
+  
+app/views/home/index.html.erb:11
+
+Information for cause: Propshaft::MissingAssetError (The asset 'img_bg_01.jpg' was not found in the load path.):
+  
+app/views/home/index.html.erb:11
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:47:33 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 132.8ms | GC: 13.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 138.0ms | GC: 13.9ms)
+Completed 200 OK in 168ms (Views: 140.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 13.9ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:47:33 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/background_img/img_bg_05-8d74b535.JPG" for 108.6.113.229 at 2025-05-03 06:47:34 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_03-ea6d8a20.JPG" for 108.6.113.229 at 2025-05-03 06:47:34 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_02-29a804f1.JPG" for 108.6.113.229 at 2025-05-03 06:47:34 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_04-a7fcaa0d.JPG" for 108.6.113.229 at 2025-05-03 06:47:34 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_01-ca78e4bf.jpg" for 108.6.113.229 at 2025-05-03 06:47:35 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:54:09 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 155.1ms | GC: 9.6ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 170.2ms | GC: 19.8ms)
+Completed 200 OK in 220ms (Views: 172.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 25.7ms)
+
+
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:54:10 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:54:10 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_02m-e71743df.JPEG" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_04m-52eb6b2e.jpg" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-1262d735.js" for 108.6.113.229 at 2025-05-03 06:54:20 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_03m-f240970f.jpg" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_01m-2a76a883.jpg" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_05m-c3ec4305.jpg" for 108.6.113.229 at 2025-05-03 06:54:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:54:24 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:55:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 29ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:55:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:56:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 2.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:56:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:56:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:56:07 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 45ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:56:08 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:56:08 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_04m-52eb6b2e.jpg" for 108.6.113.229 at 2025-05-03 06:56:08 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.1ms)
+Completed 200 OK in 30ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-1262d735.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/wedding_site-081c775a.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus.min-4b1e420e.js" for 108.6.113.229 at 2025-05-03 06:56:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 108.6.113.229 at 2025-05-03 06:56:13 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:56:18 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:56:18 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:56:18 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-03 06:56:53 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/assets/favicon_io/site-bbc508ca.webmanifest" for 108.6.113.229 at 2025-05-03 06:56:53 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 06:56:53 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/background_img/img_bg_05m-c3ec4305.jpg" for 108.6.113.229 at 2025-05-03 06:57:06 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_03m-f240970f.jpg" for 108.6.113.229 at 2025-05-03 06:57:07 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_01m-2a76a883.jpg" for 108.6.113.229 at 2025-05-03 06:57:07 +0000
+Started GET "/assets/background_img/img_bg_04m-52eb6b2e.jpg" for 108.6.113.229 at 2025-05-03 06:57:07 +0000
+Started GET "/" for 108.6.113.229 at 2025-05-03 07:03:33 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 295.4ms | GC: 62.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | GC: 1.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 343.9ms | GC: 81.2ms)
+Completed 200 OK in 450ms (Views: 354.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 108.2ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 07:03:33 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/background_img/img_bg_05m-c3ec4305.jpg" for 108.6.113.229 at 2025-05-03 07:03:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_01m-2a76a883.jpg" for 108.6.113.229 at 2025-05-03 07:03:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_02m-e71743df.JPEG" for 108.6.113.229 at 2025-05-03 07:03:39 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_03m-f240970f.jpg" for 108.6.113.229 at 2025-05-03 07:03:40 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/background_img/img_bg_04m-52eb6b2e.jpg" for 108.6.113.229 at 2025-05-03 07:03:40 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/" for 108.6.113.229 at 2025-05-03 07:03:46 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering public/406-unsupported-browser.html
+  Rendered public/406-unsupported-browser.html (Duration: 0.7ms | GC: 0.0ms)
+Filter chain halted as #<Proc:0x00007c9793def8d0 /usr/local/rvm/gems/ruby-3.3.4/gems/actionpack-8.0.2/lib/action_controller/metal/allow_browser.rb:58 (lambda)> rendered or redirected
+Completed 406 Not Acceptable in 66ms (Views: 3.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for 108.6.113.229 at 2025-05-03 07:03:53 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 6.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-03 07:03:53 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
