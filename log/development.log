@@ -9435,3 +9435,196 @@ Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.25
   
 ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
   
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:16:19 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.4ms)
+
+
+  
+ActionView::Template::Error (The asset 'wedding_site.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'wedding_site.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'wedding_site.css' was not found in the load path.):
+    30:     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    31: 
+    32:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    33:     <%= stylesheet_link_tag :wedding_site, "data-turbo-track": "reload" %>
+    34: 
+    35:     <%= javascript_importmap_tags %>
+    36:   </head>
+  
+app/views/layouts/application.html.erb:33
+
+Information for cause: Propshaft::MissingAssetError (The asset 'wedding_site.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:33
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:16:36 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | GC: 0.3ms)
+Completed 200 OK in 60ms (Views: 26.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:16:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:17:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (The asset 'button.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'button.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'button.css' was not found in the load path.):
+    31: 
+    32:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    33:     <%= stylesheet_link_tag :base, "data-turbo-track": "reload" %>
+    34:     <%= stylesheet_link_tag :button, "data-turbo-track": "reload" %>
+    35: 
+    36:     <%= javascript_importmap_tags %>
+    37:   </head>
+  
+app/views/layouts/application.html.erb:34
+
+Information for cause: Propshaft::MissingAssetError (The asset 'button.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:34
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | GC: 0.2ms)
+Completed 200 OK in 51ms (Views: 16.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/buttons-dfab44d9.css" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/base-e83700dc.css" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:18:59 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>)
+Caused by: NameError (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>):
+    37:     <%= stylesheet_link_tag :navbar, "data-turbo-track": "reload" %>
+    38:     <%= stylesheet_link_tag :packages, "data-turbo-track": "reload" %>
+    39:     <%= stylesheet_link_tag :responsive, "data-turbo-track": "reload" %>
+    40:     <%= stylesheet_link_tag :splash-screen, "data-turbo-track": "reload" %>
+    41:     <%= stylesheet_link_tag :word-animation, "data-turbo-track": "reload" %>
+    42: 
+    43:     <%= javascript_importmap_tags %>
+  
+app/views/layouts/application.html.erb:40
+
+Information for cause: NameError (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>):
+  
+app/views/layouts/application.html.erb:40
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:19:47 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>)
+Caused by: NameError (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>):
+    38:     <%= stylesheet_link_tag :packages, "data-turbo-track": "reload" %>
+    39:     <%= stylesheet_link_tag :responsive, "data-turbo-track": "reload" %>
+    40:     <%= stylesheet_link_tag :splash_screen, "data-turbo-track": "reload" %>
+    41:     <%= stylesheet_link_tag :word-animation, "data-turbo-track": "reload" %>
+    42: 
+    43:     <%= javascript_importmap_tags %>
+    44:   </head>
+  
+app/views/layouts/application.html.erb:41
+
+Information for cause: NameError (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>):
+  
+app/views/layouts/application.html.erb:41
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:20:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 14.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/hero-52681e69.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/packages-d0ce3b5d.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/word_animation-77fd9a36.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/splash_screen-5b2a45cd.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/responsive-d5265620.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/footer-9d9eb8e0.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/navbar-7282306f.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:20:04 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 235.3ms | GC: 58.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 239.5ms | GC: 58.9ms)
+Completed 200 OK in 276ms (Views: 242.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 58.9ms)
+
+
