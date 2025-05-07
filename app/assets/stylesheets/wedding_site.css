@@ -233,10 +233,34 @@ body.loaded {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Logo and brand name styling */
 .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
     font-size: 1.5rem;
     color: #f5f405 !important; /* Bright yellow */
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand span {
+    margin-left: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Add a subtle animation on hover */
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+.navbar-brand:hover span {
+    letter-spacing: 0.5px;
 }
 
 .nav-link {
@@ -446,6 +470,14 @@ footer {
         border-radius: 5px;
     }
     
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-brand span {
+        font-size: 1.3rem;
+    }
+    
     .packages {
         padding: 3rem 0;
     }
@@ -474,5 +506,13 @@ footer {
     .btn-cta {
         width: 80%;
         margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand img {
+        height: 35px;
     }
 }

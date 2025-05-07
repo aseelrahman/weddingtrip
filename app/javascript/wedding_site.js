@@ -129,5 +129,25 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    console.log("Wedding site JS loaded with right-to-left fade animation"); // Updated debug message
+    
+    // NEW CODE: Close navbar when clicking outside
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    
+    // Add click event listener to the document
+    document.addEventListener('click', function(event) {
+        // Check if navbar is expanded
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            // Check if the click is outside the navbar and not on the toggler button
+            const isClickInsideNavbar = navbarCollapse.contains(event.target);
+            const isClickOnToggler = navbarToggler.contains(event.target);
+            
+            if (!isClickInsideNavbar && !isClickOnToggler) {
+                // Simulate a click on the toggler to close the navbar
+                navbarToggler.click();
+            }
+        }
+    });
+    
+    console.log("Wedding site JS loaded with right-to-left fade animation and auto-close navbar"); // Updated debug message
 });

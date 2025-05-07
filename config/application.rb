@@ -6,6 +6,9 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+config.assets.paths << Rails.root.join('app/assets/stylesheets')
+config.assets.enabled = true
+
 module Weddingtrip
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
