@@ -29,8 +29,18 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :wedding_site, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :base, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :buttons, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :footer, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :hero, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :navbar, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :packages, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :responsive, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :splash_screen, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag :word_animation, "data-turbo-track": "reload" %>
 
     <%= javascript_importmap_tags %>
   </head>

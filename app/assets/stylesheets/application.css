@@ -12,4 +12,12 @@
  @import "bootstrap";
  @import "wedding_site";
  
- 
+@import 'base.css';
+@import 'splash_screen.css';
+@import 'hero.css';
+@import 'word_animations.css';
+@import 'navbar.css';
+@import 'buttons.css';
+@import 'packages.css';
+@import 'footer.css';
+@import 'responsive.css';

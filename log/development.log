@@ -9435,3 +9435,612 @@ Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.25
   
 ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
   
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:16:19 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.4ms)
+
+
+  
+ActionView::Template::Error (The asset 'wedding_site.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'wedding_site.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'wedding_site.css' was not found in the load path.):
+    30:     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    31: 
+    32:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    33:     <%= stylesheet_link_tag :wedding_site, "data-turbo-track": "reload" %>
+    34: 
+    35:     <%= javascript_importmap_tags %>
+    36:   </head>
+  
+app/views/layouts/application.html.erb:33
+
+Information for cause: Propshaft::MissingAssetError (The asset 'wedding_site.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:33
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:16:36 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 3.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | GC: 0.3ms)
+Completed 200 OK in 60ms (Views: 26.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:16:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:17:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::Template::Error (The asset 'button.css' was not found in the load path.)
+Caused by: Propshaft::MissingAssetError (The asset 'button.css' was not found in the load path.)
+
+Information for: ActionView::Template::Error (The asset 'button.css' was not found in the load path.):
+    31: 
+    32:     <%# Includes all stylesheet files in app/assets/stylesheets %>
+    33:     <%= stylesheet_link_tag :base, "data-turbo-track": "reload" %>
+    34:     <%= stylesheet_link_tag :button, "data-turbo-track": "reload" %>
+    35: 
+    36:     <%= javascript_importmap_tags %>
+    37:   </head>
+  
+app/views/layouts/application.html.erb:34
+
+Information for cause: Propshaft::MissingAssetError (The asset 'button.css' was not found in the load path.):
+  
+app/views/layouts/application.html.erb:34
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | GC: 0.2ms)
+Completed 200 OK in 51ms (Views: 16.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/buttons-dfab44d9.css" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/assets/base-e83700dc.css" for 108.6.113.229 at 2025-05-07 22:17:30 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:18:59 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>)
+Caused by: NameError (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>):
+    37:     <%= stylesheet_link_tag :navbar, "data-turbo-track": "reload" %>
+    38:     <%= stylesheet_link_tag :packages, "data-turbo-track": "reload" %>
+    39:     <%= stylesheet_link_tag :responsive, "data-turbo-track": "reload" %>
+    40:     <%= stylesheet_link_tag :splash-screen, "data-turbo-track": "reload" %>
+    41:     <%= stylesheet_link_tag :word-animation, "data-turbo-track": "reload" %>
+    42: 
+    43:     <%= javascript_importmap_tags %>
+  
+app/views/layouts/application.html.erb:40
+
+Information for cause: NameError (undefined local variable or method `screen' for an instance of #<Class:0x0000730920966a58>):
+  
+app/views/layouts/application.html.erb:40
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:19:47 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 4.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>)
+Caused by: NameError (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>)
+
+Information for: ActionView::Template::Error (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>):
+    38:     <%= stylesheet_link_tag :packages, "data-turbo-track": "reload" %>
+    39:     <%= stylesheet_link_tag :responsive, "data-turbo-track": "reload" %>
+    40:     <%= stylesheet_link_tag :splash_screen, "data-turbo-track": "reload" %>
+    41:     <%= stylesheet_link_tag :word-animation, "data-turbo-track": "reload" %>
+    42: 
+    43:     <%= javascript_importmap_tags %>
+    44:   </head>
+  
+app/views/layouts/application.html.erb:41
+
+Information for cause: NameError (undefined local variable or method `animation' for an instance of #<Class:0x0000730921c3a648>):
+  
+app/views/layouts/application.html.erb:41
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:20:00 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 14.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/hero-52681e69.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/packages-d0ce3b5d.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/word_animation-77fd9a36.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/splash_screen-5b2a45cd.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/responsive-d5265620.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/footer-9d9eb8e0.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/navbar-7282306f.css" for 108.6.113.229 at 2025-05-07 22:20:01 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:20:04 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 235.3ms | GC: 58.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 239.5ms | GC: 58.9ms)
+Completed 200 OK in 276ms (Views: 242.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 58.9ms)
+
+
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:23:12 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 191.3ms | GC: 16.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 194.8ms | GC: 16.0ms)
+Completed 200 OK in 240ms (Views: 195.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 16.4ms)
+
+
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:23:17 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:23:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:23:21 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:39:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:39:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:39:37 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-07 22:42:05 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/packages" for 108.6.113.229 at 2025-05-07 22:42:09 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/placeholder/400/300" for 108.6.113.229 at 2025-05-07 22:42:10 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/api/placeholder/400/300"):
+  
+Started GET "/" for 108.6.113.229 at 2025-05-08 12:12:22 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 717.3ms | GC: 60.7ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 758.4ms | GC: 60.9ms)
+Completed 200 OK in 889ms (Views: 768.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 98.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:53:43.417377', '2025-05-08 12:53:43.417380') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:53:46.499744', '2025-05-08 12:53:46.499747') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 12:53:46.520596' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 12:53:46.543024', '2025-05-08 12:53:46.543026') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:54:20.723834', '2025-05-08 12:54:20.723838') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 12:54:20.744141' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 12:54:20.762150', '2025-05-08 12:54:20.762153') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:55:38.921264', '2025-05-08 12:55:38.921268') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 12:55:38.928849' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 12:55:38.933557', '2025-05-08 12:55:38.933560') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:57:16.327799', '2025-05-08 12:57:16.327803') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 12:57:16.337680' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 12:57:16.343809', '2025-05-08 12:57:16.343812') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 12:57:34.635592', '2025-05-08 12:57:34.635595') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 12:57:34.642637' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 12:57:34.647098', '2025-05-08 12:57:34.647100') RETURNING "key" /*application='Weddingtrip'*/[0m
+Writing application-231c63cf.css
+Writing logo-c0d42022.png
+Writing favicon_io/apple-touch-icon-344af8ff.png
+Writing favicon_io/site-bbc508ca.webmanifest
+Writing favicon_io/favicon-32x32-c49fe98c.png
+Writing favicon_io/favicon-a939e1ad.ico
+Writing favicon_io/android-chrome-512x512-f90350d1.png
+Writing favicon_io/android-chrome-192x192-ded17af6.png
+Writing favicon_io/favicon-16x16-1d685066.png
+Writing background_img/img_bg_03-ea6d8a20.JPG
+Writing background_img/img_bg_05m-c3ec4305.jpg
+Writing background_img/img_bg_01-ca78e4bf.jpg
+Writing background_img/img_bg_02m-e71743df.JPEG
+Writing background_img/img_bg_05-8d74b535.JPG
+Writing background_img/img_bg_04m-52eb6b2e.jpg
+Writing background_img/img_bg_01m-2a76a883.jpg
+Writing background_img/img_bg_03m-f240970f.jpg
+Writing background_img/img_bg_04-a7fcaa0d.JPG
+Writing background_img/img_bg_02-29a804f1.JPG
+Writing packages-d0ce3b5d.css
+Writing application-e8dc057d.scss
+Writing buttons-dfab44d9.css
+Writing splash_screen-5b2a45cd.css
+Writing word_animation-77fd9a36.css
+Writing base-e83700dc.css
+Writing footer-9d9eb8e0.css
+Writing hero-52681e69.css
+Writing navbar-7282306f.css
+Writing responsive-d5265620.css
+Writing application-f504a95b.js
+Writing wedding_site-e3e6bcb6.js
+Writing controllers/application-3affb389.js
+Writing controllers/index-ee64e1f1.js
+Writing controllers/hello_controller-708796bd.js
+Writing stimulus-importmap-autoloader-64cc03e1.js
+Writing stimulus.min-2395e199.js.map
+Writing stimulus.min-4b1e420e.js
+Writing stimulus-autoloader-9d447422.js
+Writing stimulus-d59b3b7f.js
+Writing stimulus-loading-1fc53fe7.js
+Writing turbo.min-1262d735.js
+Writing turbo.min-02fd5b81.js.map
+Writing turbo-765c2e69.js
+Writing trix-4b540cb5.js
+Writing actiontext-a4ee937e.js
+Writing actiontext.esm-f1c04d34.js
+Writing trix-65afdb1d.css
+Writing actioncable-ac25813f.js
+Writing actioncable.esm-e0ec9819.js
+Writing action_cable-5212cfee.js
+Writing activestorage.esm-f2909226.js
+Writing activestorage-32201f68.js
+Writing rails-ujs.esm-e925103b.js
+Writing rails-ujs-20eaf715.js
+Writing popper-2d47ff71.js
+Writing _bootstrap-grid-72fa96f6.scss
+Writing bootstrap/_pagination-eabfe55b.scss
+Writing bootstrap/_maps-a7dff9e2.scss
+Writing bootstrap/_accordion-b2b3a81a.scss
+Writing bootstrap/helpers/_colored-links-b69bbe94.scss
+Writing bootstrap/helpers/_text-truncation-2f470970.scss
+Writing bootstrap/helpers/_icon-link-c09f7d2b.scss
+Writing bootstrap/helpers/_visually-hidden-156e67e4.scss
+Writing bootstrap/helpers/_ratio-fca4c813.scss
+Writing bootstrap/helpers/_focus-ring-171a2d9a.scss
+Writing bootstrap/helpers/_color-bg-2db55925.scss
+Writing bootstrap/helpers/_vr-f3405a55.scss
+Writing bootstrap/helpers/_stretched-link-0af9b4e7.scss
+Writing bootstrap/helpers/_stacks-41033c09.scss
+Writing bootstrap/helpers/_position-31bee6a5.scss
+Writing bootstrap/helpers/_clearfix-8dac4602.scss
+Writing bootstrap/_mixins-c68bef8a.scss
+Writing bootstrap/_alert-a5de64a2.scss
+Writing bootstrap/_helpers-298158c9.scss
+Writing bootstrap/_reboot-f81859c9.scss
+Writing bootstrap/mixins/_box-shadow-605f0147.scss
+Writing bootstrap/mixins/_pagination-93a6e01d.scss
+Writing bootstrap/mixins/_breakpoints-9172ff16.scss
+Writing bootstrap/mixins/_alert-b321b422.scss
+Writing bootstrap/mixins/_gradients-96ac5e14.scss
+Writing bootstrap/mixins/_border-radius-d478fb3f.scss
+Writing bootstrap/mixins/_visually-hidden-f1dba081.scss
+Writing bootstrap/mixins/_forms-fdacfc6c.scss
+Writing bootstrap/mixins/_backdrop-a7ab44fa.scss
+Writing bootstrap/mixins/_grid-ed508a7a.scss
+Writing bootstrap/mixins/_list-group-be10e0b5.scss
+Writing bootstrap/mixins/_text-truncate-8b4e7004.scss
+Writing bootstrap/mixins/_resize-dabe0451.scss
+Writing bootstrap/mixins/_deprecate-ea93c726.scss
+Writing bootstrap/mixins/_utilities-82ddfff0.scss
+Writing bootstrap/mixins/_banner-256b2af6.scss
+Writing bootstrap/mixins/_transition-587f238b.scss
+Writing bootstrap/mixins/_buttons-1d842813.scss
+Writing bootstrap/mixins/_container-351d4d18.scss
+Writing bootstrap/mixins/_color-scheme-35b23bbc.scss
+Writing bootstrap/mixins/_lists-c501225b.scss
+Writing bootstrap/mixins/_caret-6acc8ad0.scss
+Writing bootstrap/mixins/_table-variants-792c3cd8.scss
+Writing bootstrap/mixins/_color-mode-5049b0a2.scss
+Writing bootstrap/mixins/_clearfix-00a000b1.scss
+Writing bootstrap/mixins/_image-e28a29ad.scss
+Writing bootstrap/mixins/_reset-text-e30147e3.scss
+Writing bootstrap/_button-group-51207a22.scss
+Writing bootstrap/forms/_validation-151c52c9.scss
+Writing bootstrap/forms/_form-check-b7d4870e.scss
+Writing bootstrap/forms/_form-select-d0308d60.scss
+Writing bootstrap/forms/_form-text-7c2fda40.scss
+Writing bootstrap/forms/_form-control-307f8e9f.scss
+Writing bootstrap/forms/_input-group-2f0a6402.scss
+Writing bootstrap/forms/_floating-labels-67c464e8.scss
+Writing bootstrap/forms/_form-range-74e2161b.scss
+Writing bootstrap/forms/_labels-1b731f03.scss
+Writing bootstrap/_close-58fc3170.scss
+Writing bootstrap/_navbar-14efb398.scss
+Writing bootstrap/_forms-592799d7.scss
+Writing bootstrap/_breadcrumb-34b74197.scss
+Writing bootstrap/_functions-e361cef2.scss
+Writing bootstrap/_grid-6de5b312.scss
+Writing bootstrap/_list-group-e6f294c6.scss
+Writing bootstrap/utilities/_api-11dcc5c9.scss
+Writing bootstrap/_type-0ad01111.scss
+Writing bootstrap/_placeholders-1483058a.scss
+Writing bootstrap/_transitions-712bdd06.scss
+Writing bootstrap/_dropdown-9c36640f.scss
+Writing bootstrap/_spinners-df3c98e6.scss
+Writing bootstrap/vendor/_rfs-8466fd17.scss
+Writing bootstrap/_tables-caa80806.scss
+Writing bootstrap/_utilities-ef36e5e2.scss
+Writing bootstrap/_containers-be6e2e5a.scss
+Writing bootstrap/_offcanvas-eace0f15.scss
+Writing bootstrap/_nav-b18f0805.scss
+Writing bootstrap/_progress-539bf108.scss
+Writing bootstrap/_buttons-1e0fefdc.scss
+Writing bootstrap/_variables-fb9a6133.scss
+Writing bootstrap/_tooltip-85e4fc73.scss
+Writing bootstrap/_toasts-b8e14752.scss
+Writing bootstrap/_root-06961be3.scss
+Writing bootstrap/_badge-2879968c.scss
+Writing bootstrap/_images-ae79f639.scss
+Writing bootstrap/_carousel-75001cbb.scss
+Writing bootstrap/_card-3b4bea64.scss
+Writing bootstrap/_modal-ff5f99a0.scss
+Writing bootstrap/_popover-94f188a4.scss
+Writing bootstrap/_variables-dark-91dfc945.scss
+Writing _bootstrap-reboot-d0291d94.scss
+Writing _bootstrap-utilities-1c1ba8b8.scss
+Writing _bootstrap-5545bd2b.scss
+Writing bootstrap-527e4146.js
+Writing bootstrap/toast-05a70cc5.js
+Writing bootstrap/offcanvas-2a2a92fd.js
+Writing bootstrap/base-component-3b8de967.js
+Writing bootstrap/util/template-factory-d37b0b85.js
+Writing bootstrap/util/backdrop-8f419662.js
+Writing bootstrap/util/component-functions-438a172a.js
+Writing bootstrap/util/index-470bd166.js
+Writing bootstrap/util/sanitizer-58aebaca.js
+Writing bootstrap/util/swipe-71e3cae8.js
+Writing bootstrap/util/scrollbar-d345d820.js
+Writing bootstrap/util/config-69a5557c.js
+Writing bootstrap/util/focustrap-20935037.js
+Writing bootstrap/collapse-b71a8332.js
+Writing bootstrap/alert-df3744ab.js
+Writing bootstrap/carousel-1d14541c.js
+Writing bootstrap/button-b1ca2bce.js
+Writing bootstrap/dom/selector-engine-4077ee50.js
+Writing bootstrap/dom/event-handler-8ea4b8d8.js
+Writing bootstrap/dom/manipulator-8a4b42ac.js
+Writing bootstrap/dom/data-379e4bd3.js
+Writing bootstrap/scrollspy-6e770b69.js
+Writing bootstrap/dropdown-079e086a.js
+Writing bootstrap/tooltip-abe91b8c.js
+Writing bootstrap/popover-e384c6a9.js
+Writing bootstrap/tab-026c80f1.js
+Writing bootstrap/modal-e0df74ba.js
+Writing bootstrap-global-this-undefine-9fc5700f.js
+Writing bootstrap-sprockets-3e972927.js
+Writing bootstrap.min-c94989b5.js
+Writing bootstrap-global-this-define-525df91c.js
+Writing _font-awesome-4441b1e0.scss
+Writing font-awesome/_solid-9446ce1a.scss
+Writing font-awesome/_shims-91ee5765.scss
+Writing font-awesome/_mixins-629c0c88.scss
+Writing font-awesome/_list-a0decd15.scss
+Writing font-awesome/_animated-f559920e.scss
+Writing font-awesome/_bordered-pulled-9866c3f3.scss
+Writing font-awesome/_screen-reader-f9b313f6.scss
+Writing font-awesome/_functions-e0bba390.scss
+Writing font-awesome/_stacked-1bd24c7d.scss
+Writing font-awesome/_regular-4aa31ee5.scss
+Writing font-awesome/_sizing-b7e7b2be.scss
+Writing font-awesome/_icons-e7a85d86.scss
+Writing font-awesome/_variables-49989d5d.scss
+Writing font-awesome/_core-049c2a62.scss
+Writing font-awesome/_brands-4e875da5.scss
+Writing font-awesome/_rotated-flipped-a31e87b1.scss
+Writing font-awesome/_fixed-width-45b2bd97.scss
+Writing font-awesome/fa-regular-400-0ee0d1e9.woff2
+Writing font-awesome/fa-brands-400-24099ddc.ttf
+Writing font-awesome/fa-solid-900-64d74b77.woff2
+Writing font-awesome/fa-regular-400-727dcf37.ttf
+Writing font-awesome/fa-brands-400-c1dca0e4.woff2
+Writing font-awesome/fa-solid-900-7c036e8f.ttf
+  [1m[36mActiveRecord::SchemaMigration Load (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 13:02:15.014066', '2025-05-08 13:02:15.014070') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 13:02:15.033051' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 13:02:15.053467', '2025-05-08 13:02:15.053471') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-08 13:03:51.625164', '2025-05-08 13:03:51.625167') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 13:03:51.632405' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 13:03:51.637312', '2025-05-08 13:03:51.637314') RETURNING "key" /*application='Weddingtrip'*/[0m
+Started GET "/" for 108.6.113.229 at 2025-05-08 13:07:54 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | GC: 3.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | GC: 11.3ms)
+Completed 200 OK in 146ms (Views: 51.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 38.1ms)
+
+
