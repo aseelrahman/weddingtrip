@@ -10031,3 +10031,16 @@ Writing font-awesome/fa-solid-900-7c036e8f.ttf
   [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-08 13:03:51.632405' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
   [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-08 13:03:51.637312', '2025-05-08 13:03:51.637314') RETURNING "key" /*application='Weddingtrip'*/[0m
+Started GET "/" for 108.6.113.229 at 2025-05-08 13:07:54 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | GC: 3.2ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | GC: 11.3ms)
+Completed 200 OK in 146ms (Views: 51.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 38.1ms)
+
+
