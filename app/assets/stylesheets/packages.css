@@ -65,3 +65,12 @@
     color: #f5f405; /* Bright yellow */
     margin-bottom: 1rem;
 }
+
+.card ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
