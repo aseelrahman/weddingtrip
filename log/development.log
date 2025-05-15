@@ -12308,3 +12308,39 @@ Filter chain halted as #<Proc:0x000075993c437a38 /usr/local/rvm/gems/ruby-3.3.4/
 Completed 406 Not Acceptable in 37ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/packages" for 108.6.113.229 at 2025-05-15 14:41:41 +0000
+Cannot render console from 108.6.113.229! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 2.3ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | GC: 0.0ms)
+Completed 200 OK in 100ms (Views: 20.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.8ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-15 15:48:50.657335', '2025-05-15 15:48:50.657339') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-15 15:48:50.667211' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-15 15:48:50.671181', '2025-05-15 15:48:50.671183') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Weddingtrip'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0) /*application='Weddingtrip'*/[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-05-15 15:50:00.606453', '2025-05-15 15:50:00.606457') RETURNING "key" /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-05-15 15:50:00.633273' WHERE "ar_internal_metadata"."key" = 'environment' /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Weddingtrip'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', '304fe853693c8703e374a9e1a59433c7d63e9ef6', '2025-05-15 15:50:00.673900', '2025-05-15 15:50:00.673903') RETURNING "key" /*application='Weddingtrip'*/[0m

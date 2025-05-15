@@ -112,3 +112,33 @@ Processing by PackagesController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.0ms)
 Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "schema_sha1"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+---------------------------------------------
+PackagesControllerTest: test_should_get_index
+---------------------------------------------
+Started GET "/packages/index" for 127.0.0.1 at 2025-05-15 15:50:03 +0000
+Processing by PackagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (Duration: 2.9ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 14.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+-----------------------------------------
+HomeControllerTest: test_should_get_index
+-----------------------------------------
+Started GET "/" for 127.0.0.1 at 2025-05-15 15:50:03 +0000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
