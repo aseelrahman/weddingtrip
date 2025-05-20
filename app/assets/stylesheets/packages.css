@@ -1,76 +1,284 @@
-/* Packages Section */
-.packages {
-    padding: 5rem 0;
-    background-color: #ffffff;
+/* Enhanced Packages Section Styles */
+.packages-section {
+    padding: 6rem 0;
+    background-color: #000000;
+    position: relative;
 }
 
 .section-title {
-    text-align: center;
+    position: relative;
+    z-index: 1;
     margin-bottom: 4rem;
+    padding-top: 2.5rem;
+}
+
+.section-title .subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f5f405;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0px 0px 10px rgba(245, 244, 5, 0.3);
 }
 
 .section-title h2 {
-    font-size: 2.5rem;
-    color: #000000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
     position: relative;
     display: inline-block;
-    margin-bottom: 1.5rem;
 }
 
-.section-title h2:after {
+.section-title p {
+    color: #ffffff;
+}
+
+.section-title h2::after {
     content: '';
     position: absolute;
-    width: 50%;
+    width: 80px;
     height: 3px;
-    background-color: #f5f405; /* Bright yellow */
+    background: linear-gradient(90deg, #f5f405, rgba(245, 244, 5, 0.3));
     bottom: -10px;
-    left: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
 }
 
-.card {
-    border: 1px solid #e0e0e0;
+/* Package Cards */
+.package-card {
+    background-color: #000000;
+    border: 3px solid rgba(245, 244, 5, 0.5);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
     height: 100%;
-    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    border-color: #f5f405; /* Bright yellow */
+.package-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(245, 244, 5, 0.2);
 }
 
-.card-img-top {
+.package-card.premium {
+    border: 3px solid rgba(245, 244, 5, 0.5);
+}
+
+.package-ribbon {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: linear-gradient(45deg, #f5f405, #ffda00);
+    color: #222;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 30px;
+    transform: rotate(45deg);
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.premium .package-ribbon {
+    background: linear-gradient(45deg, #f5f405, #ffda00);
+}
+
+.package-image {
+    position: relative;
     height: 200px;
+    overflow: hidden;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.card-body {
-    padding: 2rem;
+.package-card:hover .package-image img {
+    transform: scale(1.1);
 }
 
-.card-title {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #000000;
+.package-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    text-align: center;
 }
 
-.price {
+.package-overlay h3 {
+    color: #fff;
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #f5f405; /* Bright yellow */
-    margin-bottom: 1rem;
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.card ul {
-    padding-left: 1.5rem;
+.package-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333333;
 }
 
-.card ul li {
-    margin-bottom: 0.5rem;
+.package-header h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f5f405;
+    margin: 0;
+}
+
+.package-price {
+    text-align: right;
+}
+
+.package-price .currency {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f5f405;
+    vertical-align: top;
+}
+
+.package-price .amount {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f5f405;
+}
+.package-features {
+    flex-grow: 1;
+}
+
+.package-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.package-features ul li {
+    padding: 8px 0;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.package-features ul li i {
+    margin-right: 10px;
+    color: #f5f405;
+    width: 20px;
+    text-align: center;
+}
+
+.premium .package-features ul li i {
+    color: #f5f405;
+}
+
+.package-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.btn-book {
+    background: linear-gradient(45deg, #f5f405, #ffda00);
+    color: #222;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-book:hover {
+    background: linear-gradient(45deg, #222, #444);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.premium .btn-book {
+    background: linear-gradient(45deg, #f5f405, #ffda00);
+    color: #222;
+}
+
+.premium .btn-book:hover {
+    background: linear-gradient(45deg, #222, #444);
+    color: #fff;
+}
+
+.custom-package{
+    color: #fff;
+}
+.btn-outline-custom {
+    border: 2px solid #f5f405;
+    background: transparent;
+    color: #f5f405;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-outline-custom:hover {
+    background: #f5f405;
+    color: #121212;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(245, 244, 5, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .package-overlay h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .packages-section {
+        padding: 4rem 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .package-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .package-price {
+        margin-top: 10px;
+        text-align: center;
+    }
 }
