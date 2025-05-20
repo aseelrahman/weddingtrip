@@ -1,67 +1,116 @@
 <!-- Packages Section -->
-<section id="packages" class="packages">
+<section id="packages" class="packages-section py-5">
     <div class="container">
-        <div class="section-title">
-            <h2>Our Packages</h2>
+        <div class="section-title text-center mb-5">
+            <span class="subtitle">Our Offerings</span>
+            <h2>Photography Packages</h2>
             <p>Tailored to capture every moment of your special day</p>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row">
             <!-- Package 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" class="card-img-top" alt="Essential Package">
-                    <div class="card-body">
-                        <h5 class="card-title">Essential Package</h5>
-                        <p class="price">$126</p>
-                        <ul>
-                            <li>Duration: 1 hour</li>
-                            <li>1 portrait photographer</li>
-                            <li>5 Exclusive Edited photos</li>
-                            <li>All RAW post processed</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary-custom btn-cta w-100">Book an event</a>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-card premium">
+                    <div class="package-image">
+                        <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" alt="Essential Package">
+                        <div class="package-overlay">
+                            <h3>Essential</h3>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h5>Essential Package</h5>
+                            <div class="package-price">
+                                <span class="currency">$</span>
+                                <span class="amount">126</span>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fa-regular fa-clock"></i> Duration: 1 hour</li>
+                                <li><i class="fa-solid fa-user"></i> 1 portrait photographer</li>
+                                <li><i class="fa-regular fa-image"></i> 5 Exclusive Edited photos</li>
+                                <li><i class="fa-solid fa-layer-group"></i> All RAW post processed</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#" class="btn btn-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Package 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" class="card-img-top" alt="Classic Package">
-                    <div class="card-body">
-                        <h5 class="card-title">Classic Package</h5>
-                        <p class="price">$499</p>
-                        <ul>
-                            <li>Duration: 4-5 hours</li>
-                            <li>Senior photographer</li>
-                            <li>20 Exclusive Edited photos</li>
-                            <li>All RAW post processed</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary-custom btn-cta w-100">Book an event</a>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-card premium">
+                    <div class="package-image">
+                        <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" alt="Classic Package">
+                        <div class="package-overlay">
+                            <h3>Classic</h3>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h5>Classic Package</h5>
+                            <div class="package-price">
+                                <span class="currency">$</span>
+                                <span class="amount">499</span>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fa-regular fa-clock"></i> Duration: 4-5 hours</li>
+                                <li><i class="fa-solid fa-user-tie"></i> Senior photographer</li>
+                                <li><i class="fa-regular fa-image"></i> 20 Exclusive Edited photos</li>
+                                <li><i class="fa-solid fa-layer-group"></i> All RAW post processed</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#" class="btn btn-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Package 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card">
-                    <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" class="card-img-top" alt="Premium Package">
-                    <div class="card-body">
-                        <h5 class="card-title">Premium Package</h5>
-                        <p class="price">$1,250</p>
-                        <ul>
-                            <li>Duration: 4–5 hours</li>
-                            <li>Photographer: Lubeet Rahman</li>
-                            <li>2 Assistant photographers</li>
-                            <li>50 Exclusive Edited photos</li>
-                            <li>All RAW post processed</li>
-                            <li>FHD Slideshow</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary-custom btn-cta w-100">Book an event</a>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="package-card premium">
+                    <div class="package-ribbon">Premium</div>
+                    <div class="package-image">
+                        <img src="<%= asset_path('background_img/img_bg_01.jpg') %>" alt="Premium Package">
+                        <div class="package-overlay">
+                            <h3>Premium</h3>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <div class="package-header">
+                            <h5>Premium Package</h5>
+                            <div class="package-price">
+                                <span class="currency">$</span>
+                                <span class="amount">1,250</span>
+                            </div>
+                        </div>
+                        <div class="package-features">
+                            <ul>
+                                <li><i class="fa-regular fa-clock"></i> Duration: 4–5 hours</li>
+                                <li><i class="fa-solid fa-star"></i> Photographer: Lubeet Rahman</li>
+                                <li><i class="fa-solid fa-users"></i> 2 Assistant photographers</li>
+                                <li><i class="fa-regular fa-image"></i> 50 Exclusive Edited photos</li>
+                                <li><i class="fa-solid fa-layer-group"></i> All RAW post processed</li>
+                                <li><i class="fa-solid fa-film"></i> FHD Slideshow</li>
+                            </ul>
+                        </div>
+                        <div class="package-footer">
+                            <a href="#" class="btn btn-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <div class="text-center mt-4 custom-package">
+            <p class="mb-3">Not sure which package is right for you?</p>
+            <a href="#" class="btn btn-outline-custom">Contact Us for Custom Package</a>
         </div>
     </div>
 </section>
